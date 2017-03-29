@@ -42,7 +42,9 @@ header, section, footer{
 
 .home{
 	width: 100%;
-	top: 30%;
+	top: 5px;
+	height: 100vh;
+	position: relative;
 }
 
 .logo{
@@ -58,8 +60,8 @@ header, section, footer{
 	text-align: left;
 	letter-spacing: 0em;
 	position: absolute;
-	top: 53%;
-	left: 61%;
+	top: 65%;
+	left: 65%;
 }
 
 .grafismo-tagline{
@@ -167,15 +169,11 @@ section .historia-img {
 }
 
 .todos-1{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 	width: 50%;
-}
-
-.todos-1 img{
-	width: 50%;
-	position: relative;
-	left: 2%;
-	top: -305px;
-	padding-top: 25%;
 }
 
 .todos-1 h1{
@@ -183,24 +181,25 @@ section .historia-img {
 	color: rgb(0, 0, 0);
 	text-transform: uppercase;
 	text-align: center;
-    letter-spacing: 0em;
-	position: absolute;
-	width: 15%;
-	left: 18%;
-    top: 30px;
-    
+  letter-spacing: 0em;
+  line-height: 1.8em;
+	width: 220px;
+	height: 220px;
+	padding: 5% 5%;
+	margin: 10% 10%;
+	border: 30px solid #39B54A;
+	border-radius: 100%;
 }
 
 .todos-1 p{
-    font-size: 0.95em;
+  font-size: 0.95em;
 	color: rgb(0, 0, 0);
 	font-style: normal;
 	text-align: left;
 	letter-spacing: 0em;
-	position: absolute;
-	width: 30%;	
-	left: 13%;
-	top: 250px; 
+	width: 70%;
+	margin-bottom: 10%;
+	margin-top: 0%;
 }
 
 #todos-2{
