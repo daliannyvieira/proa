@@ -117,21 +117,105 @@ section .historia-img {
 
 }
 
-
-.colaboracao-trabalho{
-	font-size: 1.5em;
-	color: rgb(0, 0, 0);
-	text-align: center;
-	line-height: 1.14em;
-	letter-spacing: 0em;	
+.conteiner-apoios{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+}
+.cont-trabalho{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 50%;
+	width: 50%;
+	margin: 9%;
 	background: rgb(251, 176, 59);
+	border-radius: 50%;
+	height: 160px;
+	width: 160px;
+
+}
+
+.cont-colaboracao{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 50%;
+	width: 50%;
+	/*margin: 0;*/
+	background: rgb(0, 174, 239);
+	border-radius: 50%;
+	height: 250px;
+	width: 250px;
+}
+
+.cont-contato{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 50%;
+	width: 50%;
+	margin: 9%;
+	background: rgb(241, 90, 41);
+	border-radius: 50%;
+	height: 160px;
+	width: 160px;
+	
+
+
+}
+
+.cont-texto{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 14%;
+	margin-top: 0 auto;
+	margin-left: 14%;
+}
+
+.cont-trabalho h1{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 160px;
-	width: 160px;
-	border-radius: 50%;
-	margin-left: 8%;
+	font-size: 1.2em;
+	text-align: center;
+	letter-spacing: 0em;
+	margin-top: 50%;
+}
+
+.cont-trabalho p{
+	position: relative;
+	top: 30px;
+	left: 10px;
+	font-size: 1.1em;
+	letter-spacing: 0em;
+	font-weight: bold;
+}
+
+.cont-colaboracao h1{
+	font-size: 2.2em;
+	text-align: center;
+	letter-spacing: 0.2em;
+	position: absolute;
+
+
+
+}
+
+.cont-colaboracao p{
+	position: relative;
+	top: 65%;
+	left: 10px;
+	font-size: 1.2em;
+	text-align: center;
+	letter-spacing: 0em;
+	font-weight: bold;
+	margin: 0;
+
 
 }
 
