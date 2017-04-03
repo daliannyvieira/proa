@@ -4,9 +4,9 @@
 	<title>Proa</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://use.typekit.net/igg4ipr.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
@@ -16,12 +16,11 @@
 .tk-filson-soft
 
 -->
-
 	<header>
 			<nav class="menu">
 				<img class="logo" src="assets/logo.png">
 				<ul>
-					<li class="tk-balboa-plus-fill">História</li>
+					<li class="tk-balboa-plus-fill"><a href=".historia"> História</a></li>
 					<li class="tk-balboa-plus-fill">Mídia</li>
 					<li class="tk-balboa-plus-fill">Contribua</li>
 					<li class="tk-balboa-plus-fill">Contato</li>
@@ -38,7 +37,7 @@
 			</div>
 			<div id="todos-2" class="tk-balboa-plus-fill">
 			<!-- <div class="conteiner"> -->
-				<div class="itens">
+				<div class="itens" data-target="passeios">
 					<h2>passeios</h2>
 				</div>
 				<div class="itens">
@@ -56,7 +55,7 @@
 				<div class="itens">
 					<h2>encontros de sensibilização</h2>
 				</div>
-				<div class="itens">
+				<div class="itens" data-target="passeios">
 					<h2>jardim dos prazeres</h2>
 				</div>
 				<div class="itens">
@@ -64,6 +63,16 @@
 				</div>
 				<div class="itens">
 					<h2>renovação de vidas da comunidade</h2>
+				</div>
+			</div>
+			<div id="passeios" class="ball-content">
+				<div class="ball-min">
+					<h2>passeios</h2>	
+				</div>
+				<div class="ball-max">
+					<h2>Passeios</h2>
+					<button>x</button>
+					<p>Moramos na cidade maravilhosa, conheceê-la é um dever e um prazer. Organizamos passeios e excursões pelo Rio para conhecer seus espaços de cultura, lazer, atrações e pontos turísticos. Assim fortalecemos nos nossos jovens a sensação de pertencimento e os ajudamos ampliar seus horizontes e além de descobrir as belezas da cidade.</p>
 				</div>
 			</div>	
 		</section>
@@ -73,10 +82,10 @@
 				<p class="tk-filson-soft historia-texto">O PROA (Prevenção Realizada com Organização e Amor) iniciou suas atividades em abril de 1998, na Comunidade do Morro dos Prazeres, no bairro de Santa Teresa, Rio de Janeiro, quando um grupo de amigos decidiu convencer os moradores da importância de se protegerem contra doenças sexualmente transmissíveis (DSTs). Munidos de um caderno com fotos e informações sobre as DSTs, eles começaram a distribuir preservativos, realizando um trabalho de conscientização e educação sexual. O PROA estabeleceu uma parceria - que se fortalece a cada ano - com a Unidade de Saúde local a fim de difundir informações sobre seus programas sanitários para a comunidade e, desde então tem participado de capacitações em diferentes áreas de promoção da saúde, atuando de maneira cada vez mais expressiva no território.
 				Com a ampliação do trabalho de prevenção das DSTs/Aids, foram estabelecidas novas parcerias com creches e escolas (municipais, estaduais e privadas),  OSCs, órgãos públicos, empresários locais e uma grande rede de amigos/parceiros.</p>	
 		</section>
-
 		<section>
 			<p class="texto-midia tk-balboa-plus-fill">MÍDIA</p>
-			<iframe class=:"video-midia" width="540" height="330"  src="https://www.youtube.com/embed/kMEXbvl0a7Q" frameborder="0" allowfullscreen></iframe>
+			<iframe class=:"video-midia" width="530" height="320"  src="https://www.youtube.com/embed/kMEXbvl0a7Q" frameborder="0" allowfullscreen></iframe>
+			<p class="tk-balboa-plus-fill">Reciclação 2016 </p>
 		</section>
 		<section class="conteiner-apoios">	
 			<div class="cont-trabalho">
@@ -119,5 +128,6 @@
 		<p class="tk-filson-soft">fundos Morro dos Prazeres – Santa Teresa- RJ</p>
 		<p class="tk-filson-soft">CEP: 20241-410</p>
 	</footer>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
