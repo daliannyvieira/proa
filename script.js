@@ -1,5 +1,5 @@
 (function() {
-  var cards = document.querySelectorAll('#todos-2');
+  var cards = document.querySelectorAll('.todos-2');
 
   for (var i = 0; i < cards.length; i++) {
     cards[i].addEventListener('click', function(event) {

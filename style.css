@@ -7,6 +7,10 @@ header, section, footer{
 	position: relative;
 }
 
+section{
+	padding-top: 7%;
+}
+
 .menu{
 	position: fixed;
 	width: 100%;
@@ -15,8 +19,7 @@ header, section, footer{
 	flex-direction: row;
 	align-items: center;
 	z-index: 1;
-	background: white;
-	
+	background: #fff;
 }
 
 .menu ul{ 
@@ -36,24 +39,25 @@ header, section, footer{
 }
 .menu ul li a {
 	font-size: 1.6em;
-	color: rgb(0, 0, 0);
+	color: #000;
 	text-transform: uppercase;
 	text-decoration: underline;
 	text-align: center;
 	line-height: 1.61em;
 	letter-spacing: 0em;	
-
-
 }
 .home{
 	width: 100%;
 	top: 5px;
 	height: 100vh;
 	position: relative;
+	margin-top: 9%;
 }
-
-.logo{
+.menu a{
 	width: 9%;
+}
+.logo{
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -65,7 +69,7 @@ header, section, footer{
 	text-align: left;
 	letter-spacing: 0em;
 	position: absolute;
-	top: 54%;
+	top: 60%;
 	left: 61%;
 }
 
@@ -78,7 +82,69 @@ header, section, footer{
 	letter-spacing: 0em;
 }
 
-section .historia-img {
+#todos{
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0;
+	padding-top: 0;
+	width: 100%;
+	height: 200vh;
+}
+
+.todos-1{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 50%;
+	max-height: 100vh;
+
+	
+}
+
+.todos-1 h1{
+	font-size: 2.0em;
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0em;
+	line-height: 1.8em;
+	width: 220px;
+	height: 220px;
+	padding: 5% 5%;
+	margin: 10% 10%;
+	border: 30px solid #39B54A;
+	border-radius: 100%;
+}
+
+.todos-1 p{
+	font-size: 0.95em;
+	color: rgb(0, 0, 0);
+	font-style: normal;
+	text-align: left;
+	letter-spacing: 0em;
+	width: 70%;
+	margin-bottom: 10%;
+	margin-top: 0%;
+}
+
+.todos-2{
+	background: rgb(0, 174, 239);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.8em;
+	font-style: normal;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1.0em;
+	letter-spacing: 0.01em;
+	width: 50%;
+	max-height: 100vh;
+}
+
+#historia .historia-img {
 	position: relative;
 	left: 35%;
 	top: -52px;
@@ -95,7 +161,7 @@ section .historia-img {
 	width: 50%;
 	position: relative;	
 	left: 29%;
-	top: -70px;
+	top: -100px;
 }
 
 .h2{
@@ -296,6 +362,8 @@ section .historia-img {
 	align-items: center;
 	justify-content: center;
 	height: 90vh;
+	padding-top: 0;
+	margin-top: 7%;
 	background: rgb(0, 102, 179);
 	background: url(assets/grafismo.svg) no-repeat center center, rgb(0, 102, 179);
 	background-size: 35%;
@@ -310,12 +378,16 @@ section .historia-img {
 	width: 25%;
 	margin: 0 2%;
 	color: rgb(255, 255, 255);
+
 }
 
 .contato-titulo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-size: 2em;
 	margin: 0;
-
+    
 }
 
 .contato-descricao p {
@@ -333,61 +405,9 @@ section .historia-img {
 	font-weight: 700;
 	color: rgb(251, 176, 59);
 	display: flex;
+
 }
 
-.todos{
-	display: flex;
-	flex-flow: row wrap;
-	margin: 0;
-	width: 100%;
-	height: 200vh;
-}
-
-.todos-1{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	width: 50%;
-	max-height: 100vh;
-	
-}
-
-.todos-1 h1{
-	font-size: 2.0em;
-	color: rgb(0, 0, 0);
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: 0em;
-	line-height: 1.8em;
-	width: 220px;
-	height: 220px;
-	padding: 5% 5%;
-	margin: 10% 10%;
-	border: 30px solid #39B54A;
-	border-radius: 100%;
-}
-
-.todos-1 p{
-	font-size: 0.95em;
-	color: rgb(0, 0, 0);
-	font-style: normal;
-	text-align: left;
-	letter-spacing: 0em;
-	width: 70%;
-	margin-bottom: 10%;
-	margin-top: 0%;
-}
-
-#todos-2{
-	background: rgb(0, 174, 239);
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	width: 50%;
-	max-height: 100vh;
-}
 
 div .colaboracao{
 	display: flex;
@@ -421,11 +441,15 @@ div .colaboracao{
 }
 
 .itens h2 {
-	font-size: 1.44em;
+	font-size: 1.5em;
 	color: #000;
 	text-transform: uppercase;
+	font-style: normal;
 	text-align: center;
+	line-height: 1.35em;
 	letter-spacing: 0.01em;
+	width: 90%
+
 }
 
 .ball-content{
@@ -524,7 +548,8 @@ footer {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	margin: 4% 0;
+	margin: 0;
+	padding: 2%;
 	background: rgb(243, 243, 243);
 
 }
@@ -537,4 +562,7 @@ footer p {
 footer a {
 	color: black;
 }
+@media only screen and (max-width: 855px) {
+	
 
+}
