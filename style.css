@@ -10,6 +10,9 @@ header, section, footer{
 section{
 	padding-top: 7%;
 }
+.resposivo{
+	display: none;
+}
 
 .menu{
 	position: fixed;
@@ -562,7 +565,98 @@ footer p {
 footer a {
 	color: black;
 }
-@media only screen and (max-width: 855px) {
-	
+@media only screen and (max-width: 803px) {
+	html, body{
+	margin: 0;
+	padding: 0;
+	}
+	.resposivo{
+		display: block;	
+		font-size: 2.92em;
+		color: #000;
+		font-style: normal;
+		text-align: left;
+		line-height: 2.51em;
+		letter-spacing: 0em;
+		margin-left:  15%;
+	}
+	.menu ul li{
+		display: none;
+	}
+	header, section, footer{
+	position: relative;
+	}
+	.menu{
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction:	row;
+	align-items: center;
+	z-index: 1;
+	background: #fff;
+	margin-bottom: -10%;
+	}	
+	.logo{
+	width: 200%;
+	}
+	.tagline{
+  	font-size: 4.31em;
+	color: rgb(241, 90, 41);
+	font-style: normal;
+	text-align: left;
+	line-height: 1.98em;
+	/*letter-spacing: 0em;*/
+	position: absolute;
+	margin-top: 40%;
+	left: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	}
+	#todos{
+	display: flex;
+	flex-flow: column wrap;
+	margin-top: 30%;
+	padding-top: 0;
+	width: 100%;
+	height: 200vh;
+	}
+	.todos-1{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 50%;
+	}
+	.todos-1 h1{
+	font-size: 2.0em;
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0em;
+	line-height: 1.8em;
+	position: relative;
+	margin-top: 30%;
+	margin-left: 100%;
+	width: 220px;
+	height: 220px;
+	border: 30px solid #39B54A;
+	border-radius: 100%;
+	}
+	.todos-2{
+		background: #fff;
+		position: relative;
+	}
+	.todos-1 p{
+	font-size: 0.95em;
+	color: #000;
+	font-style: normal;
+	text-align: left;
+	line-height: 1.07em;
+	letter-spacing: 0em;
+	display: flex;
+	justify-content: center;
 
 }
